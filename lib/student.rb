@@ -24,7 +24,8 @@ attr_accessor :name, :grade
 
   def self.dorp_table
     sql = <<-SQL
-      DROP TABLE students
+      DROP TABLE students;
+
   end
 
 end
