@@ -29,4 +29,11 @@ attr_accessor :name, :grade
     DB[:conn].execute(sql)
   end
 
+  def save
+    sql = <<-SQL
+      INSERT INTO songs (name, album)
+      VALUES (?, ?)
+    SQL
+  end
+
 end
