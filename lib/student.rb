@@ -34,6 +34,7 @@ attr_accessor :name, :grade
       INSERT INTO songs (name, album)
       VALUES (?, ?)
     SQL
+     DB[:conn].execute(sql, self.name, self.grade)
   end
 
 end
