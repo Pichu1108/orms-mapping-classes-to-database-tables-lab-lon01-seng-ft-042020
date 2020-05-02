@@ -22,4 +22,9 @@ attr_accessor :name, :grade
     DB[:conn].execute(sql)
   end
 
+  def self.dorp_table
+    sql = <<-SQL
+      DROP TABLE students
+  end
+
 end
