@@ -40,7 +40,7 @@ attr_accessor :name, :grade
   end
 
   def self.create(name:,grade:)
-
+    student = Student.new(name, grade)
   end
 
 end
